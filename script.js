@@ -20,10 +20,10 @@ const getUserId = async () => {
             <td class="fullname">${details.name.title} ${details.name.last} ${details.name.first}</td>
             <td class="age">${details.dob.age}</td>
             <td class="Phone-number">+${details.phone}</td>
-            <td class="nation">${details.nation}</td></tr>`
+            <td class="nation">${details.location.country}</td></tr>`
     })
     // console.log(randomUserData)
-    // console.log(userData[0].nation)
+    console.log(userData[0], userData[1].location.country)
     btn.addEventListener('click',()=>{
         // tbody.innerHTML = randomUserData
         tbody.insertAdjacentHTML('afterend',randomUserData)

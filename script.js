@@ -19,11 +19,11 @@ const getUserId = async () => {
             <td class="picture"><img src="${details.picture.large}" alt="avater"></td>
             <td class="fullname">${details.name.title} ${details.name.last} ${details.name.first}</td>
             <td class="age">${details.dob.age}</td>
-            <td class="Phone-number">+${details.Phone}</td>
-            <td class="nation">${details.id.nation}</td></tr>`
+            <td class="Phone-number">+${details.phone}</td>
+            <td class="nation">${details.nation}</td></tr>`
     })
     // console.log(randomUserData)
-    // console.log(userData[0].picture.large)
+    // console.log(userData[0].nation)
     btn.addEventListener('click',()=>{
         // tbody.innerHTML = randomUserData
         tbody.insertAdjacentHTML('afterend',randomUserData)
